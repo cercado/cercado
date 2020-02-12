@@ -1,0 +1,25 @@
+@import "../variables.scss";
+
+.page-footer {
+    background-color: $color-secondary;
+}
+
+.footer-copyright {
+    background-color: $color-secondary-dark;
+    color: $color-secondary-light;
+}
+
+.container-fluid {
+    color: $text-color-light;
+    padding: 3em;
+
+}
+
+a {
+    color: $text-color-light;
+    font-weight: bold;
+
+    &:link, &:visited, &:hover, &:active {
+        color: $text-color-light;
+    }
+}

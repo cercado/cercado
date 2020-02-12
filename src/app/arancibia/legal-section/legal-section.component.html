@@ -1,0 +1,25 @@
+<section class="process">
+  <div class="container-fluid container-fluid-max">
+    <div class="row text-center py-5 justify-content-center">
+      <div class="col-12 pb-4">
+        <h2 class="text-white">Información legal</h2>
+      </div>
+      <div class="card col-md-6">
+        <div class="card-body">
+          <ul ngbNav #nav="ngbNav" [(activeId)]="_active" class="nav-tabs nav-justified nav-pills">
+            <li *ngFor="let document of this.config.legal.documents; let i = index;" [ngbNavItem]="i + 1">
+              <a ngbNavLink>{{document.title}}</a>
+              <ng-template ngbNavContent>
+                <div class="description">
+                  {{document.description}}
+                </div>
+                <iframe [src]="document.url | safe: 'resourceUrl'" class="doc"></iframe>
+              </ng-template>
+            </li>
+          </ul>
+          <div [ngbNavOutlet]="nav" class="mt-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+.home-contact-form {
+    z-index: 1;
+    max-width: 450px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+section#home {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+.container-fluid-max {
+    max-width: 1440px;
+}
+
+.scroll .page-header {
+    background: red;
+}
+
+.scrolled {
+    // margin: 0 1em;
+}

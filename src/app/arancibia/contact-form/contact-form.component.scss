@@ -1,0 +1,63 @@
+#app-contact-form {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 1.2em 0.8em;
+    border-radius: 1em;
+}
+
+#app-contact-form .title {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#app-contact-form form {
+    text-align: center;
+}
+
+#app-contact-form form div.col {
+    padding: 0.5em;
+    margin: 0;
+}
+
+#app-contact-form form div.row {
+    margin: 0;
+}
+
+#app-contact-form form input:focus, #app-contact-form form textarea:focus {
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+    border-color: white;
+}
+
+#app-contact-form form input, #app-contact-form form textarea {
+    background: unset;
+    color: white;
+}
+
+#app-contact-form form input::placeholder, #app-contact-form form textarea::placeholder {
+    color: gray;
+    transition: opacity 0.3s linear;
+}
+
+#app-contact-form form input:focus::placeholder, #app-contact-form form textarea:focus::placeholder {
+    color: white;
+    opacity: 0;
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+#app-contact-form form button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-color: white;
+    text-align: center;
+}
+
+#app-contact-form form button:hover {
+    background-color: #0095a8;
+}
+
+#app-contact-form form div.button {
+    padding-top: 1em;
+}

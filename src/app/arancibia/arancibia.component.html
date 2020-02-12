@@ -1,0 +1,39 @@
+<header class="fixed-top page-header" [ngClass]="{'scrolled': scrolled}">
+  <div class="container-fluid container-fluid-max">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" routerLink="">arancibia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsable" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-between" id="navbarCollapsable">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/arancibia">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/arancibia']" fragment="features">Características</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/arancibia']" fragment="location">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/arancibia']" fragment="legal">Información legal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/arancibia']" fragment="history">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/arancibia']" fragment="contact-us">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <app-home-slider [config]="config"></app-home-slider>
+  <app-features-section [config]="config" id="features"></app-features-section>
+  <app-location-section [config]="config" id="location"></app-location-section>
+  <app-legal-section [config]="config" id="legal"></app-legal-section>
+</main>
+<app-footer></app-footer>
