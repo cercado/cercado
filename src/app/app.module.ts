@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ArancibiaComponent } from './arancibia/arancibia.component';
 
+import { ClickOutsideModule } from 'ng-click-outside';
 import { SafePipeModule } from 'safe-pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    ClickOutsideModule,
     HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },

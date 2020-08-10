@@ -19,10 +19,14 @@ export class ArancibiaComponent implements OnInit {
     this.config = config;
   }
 
+  onNavbarClickedOutside(e: Event) {
+    const navbar = document.querySelector('.navbar-collapse');
+    navbar.classList.remove('show');
+  }
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
       const scrollY = document.documentElement.scrollTop;
       this.scrolled = scrollY > 0;
   }
-
 }
