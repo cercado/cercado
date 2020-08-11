@@ -29,6 +29,12 @@ section.process {
     margin: 2em;
 }
 
+@media screen and (max-width: 480px) {
+    .card {
+        margin: 0.5em;
+    }
+}
+
 :host ::ng-deep .tab-pane.active {
     animation: fade-in 4s ease-out;
 }
