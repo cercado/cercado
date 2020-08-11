@@ -26,3 +26,9 @@ section#home {
 .scrolled {
     // margin: 0 1em;
 }
+
+@media screen and (max-width: 991px) {
+    section#home {
+        margin-top: 70px;
+    }
+}
