@@ -10,7 +10,10 @@ import { ClickOutsideModule } from 'ng-click-outside';
 import { SafePipeModule } from 'safe-pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
+import { HttpClientJsonpModule } from '@angular/common/http';
+
 import { ContactFormComponent } from './arancibia/contact-form/contact-form.component';
 import { HomeSliderComponent } from './arancibia/home-slider/home-slider.component';
 import { FeaturesSectionComponent } from './arancibia/features-section/features-section.component';
@@ -39,6 +42,8 @@ const appRoutes: Routes = [
     BrowserModule,
     ClickOutsideModule,
     HttpClientModule,
+    HttpClientJsonpModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'arancibia', component: ArancibiaComponent },
