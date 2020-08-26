@@ -15,6 +15,7 @@ interface MailChimpResponse {
 export class ContactFormComponent implements OnInit {
   private mailChimpEndPoint = 'https://gmail.us17.list-manage.com/subscribe/' +
     'post-json?u=79d161c2c6d19193041762737&id=c8e6cca2e8';
+  private stepIndex = 0;
   submitted = false;
   error = null;
 
@@ -39,6 +40,15 @@ export class ContactFormComponent implements OnInit {
     messageControl: new FormControl('', [
       Validators.required,
     ]),
+    wantsInstallmentsControl: new FormControl(false, [
+      Validators.required,
+    ]),
+    downPaymentControl: new FormControl(30000, [
+      Validators.required,
+    ]),
+    bankCreditControl: new FormControl(30000, [
+      Validators.required,
+    ]),
   });
 
   constructor(private http: HttpClient) {
@@ -46,6 +56,10 @@ export class ContactFormComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  rollStep(delta: number) {
+    this.stepIndex += delta;
   }
 
   onSubmit(data) {

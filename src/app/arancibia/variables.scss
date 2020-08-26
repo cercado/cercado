@@ -8,3 +8,7 @@ $color-secondary-light:#5e92f3;
 
 $text-color-light: #ffffff;
 $text-color-dark: #000000;
+
+$success: $color-primary-dark;
+
+@import "bootstrap";

@@ -3,38 +3,87 @@
     ¡Déjanos tus datos!
   </div>
   <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)">
-    <div class="container">
-      <div class="row">
-        <div class="form-group col">
-          <input type="text" class="form-control" id="inputName" placeholder="Nombres" formControlName="firstNameControl">
+    <div class="align-items-start flex-column">
+      <div class="container mb-auto p-2">
+        <div class="step step-0" *ngIf="stepIndex === 0">
+          <div class="row">
+            <div class="form-group col">
+              <input type="text" class="form-control" id="inputName" placeholder="Nombres" formControlName="firstNameControl">
+            </div>
+            <div class="form-group col">
+              <input type="text" class="form-control" id="inputSurname" placeholder="Apellidos" formControlName="lastNameControl">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <input type="text" class="form-control" id="inputName" placeholder="DNI" formControlName="dniControl">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <input type="text" class="form-control" id="inputName" placeholder="Teléfono" formControlName="phoneControl">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico" formControlName="emailControl">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje" formControlName="messageControl"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="wantsInstallmentsControl">
+              <label class="form-check-label" for="exampleCheck1">Quiero pagar en cuotas</label>
+            </div>
+          </div>
         </div>
-        <div class="form-group col">
-          <input type="text" class="form-control" id="inputSurname" placeholder="Apellidos" formControlName="lastNameControl">
+        <div class="step step-1" *ngIf="stepIndex === 1">
+          <div class="row">
+            <label class="form-check-label float-left" for="exampleCheck1">¿Cuánto dispones como pago inicial?</label>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text">S/.</span>
+                </div>
+                <input type="number" class="form-control" min="0" max="300000" step="10000" value="30000" id="inputName" formControlName="downPaymentControl">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <label class="form-check-label float-left" for="exampleCheck1">¿A cuánto asciende el crédito de su banco?</label>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text">S/.</span>
+                </div>
+                <input type="number" class="form-control" min="0" max="300000" step="10000" value="30000" id="inputName" formControlName="bankCreditControl">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="form-group row">
-        <div class="col">
-          <input type="text" class="form-control" id="inputName" placeholder="DNI" formControlName="dniControl">
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col">
-          <input type="text" class="form-control" id="inputName" placeholder="Teléfono" formControlName="phoneControl">
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico" formControlName="emailControl">
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje" formControlName="messageControl"></textarea>
-        </div>
-      </div>
-      <div class="row button">
-        <div class="col">
-          <button type="submit" class="btn btn-primary">Solicitar información</button>
+      <div class="row d-flex p-2">
+        <div class="d-flex flex-row-reverse input-group">
+          <div *ngIf="!formData.value.wantsInstallmentsControl && stepIndex === 0">
+            <button type="submit" class="btn btn-success">Solicitar información</button>
+          </div>
+          <div *ngIf="formData.value.wantsInstallmentsControl && stepIndex === 1">
+            <div class="btn-group" role="group">
+              <button class="btn btn-secondary" (click)="rollStep(-1)">Anterior</button>
+              <button type="submit" class="btn btn-success">Solicitar información</button>
+            </div>
+          </div>
+          <div *ngIf="formData.value.wantsInstallmentsControl && stepIndex === 0">
+            <button class="btn btn-secondary" (click)="rollStep(1)">Siguiente</button>
+          </div>
         </div>
       </div>
     </div>
