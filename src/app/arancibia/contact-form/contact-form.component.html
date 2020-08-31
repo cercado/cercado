@@ -9,24 +9,39 @@
           <div class="row">
             <div class="form-group col">
               <input type="text" class="form-control" id="inputName" placeholder="Nombres" formControlName="firstNameControl">
+              <div *ngIf="displayValidation && formData.controls.firstNameControl.invalid">
+                <div class="valid-feedback d-flex">Nombre inválido: Muy corto.</div>
+              </div>
             </div>
             <div class="form-group col">
               <input type="text" class="form-control" id="inputSurname" placeholder="Apellidos" formControlName="lastNameControl">
+              <div *ngIf="displayValidation && formData.controls.lastNameControl.invalid">
+                <div class="valid-feedback d-flex">Apellidos inválidos: Muy corto.</div>
+              </div>
             </div>
           </div>
           <div class="form-group row">
             <div class="col">
               <input type="text" class="form-control" id="inputName" placeholder="DNI" formControlName="dniControl">
+              <div *ngIf="displayValidation && formData.controls.dniControl.invalid">
+                <div class="valid-feedback d-flex">DNI inválido: debe introducir 8 caracteres.</div>
+              </div>
             </div>
           </div>
           <div class="form-group row">
             <div class="col">
               <input type="text" class="form-control" id="inputName" placeholder="Teléfono" formControlName="phoneControl">
+              <div *ngIf="displayValidation && formData.controls.phoneControl.invalid">
+                <div class="valid-feedback d-flex">Teléfono inválido</div>
+              </div>
             </div>
           </div>
           <div class="form-group row">
             <div class="col">
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico" formControlName="emailControl">
+              <div *ngIf="displayValidation && formData.controls.emailControl.invalid">
+                <div class="valid-feedback d-flex">Correo electrónico inválido</div>
+              </div>
             </div>
           </div>
           <div class="form-group row">
@@ -71,6 +86,11 @@
         </div>
       </div>
       <div class="row d-flex p-2">
+        <div *ngIf="error" class="alert alert-danger">
+          Lo sentimos, hubo un error. De persistir, comunicarse a informes@cercado.pe
+        </div>
+      </div>
+      <div *ngIf="!submitted" class="row d-flex p-2">
         <div class="d-flex flex-row-reverse input-group">
           <div *ngIf="!formData.value.wantsInstallmentsControl && stepIndex === 0">
             <button type="submit" class="btn btn-success">Solicitar información</button>
