@@ -5,7 +5,7 @@
   <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)">
     <div class="align-items-start flex-column">
       <div class="container mb-auto p-2">
-        <div class="step step-0" *ngIf="stepIndex === 0">
+        <div class="step step-0" *ngIf="!submitted && stepIndex === 0">
           <div class="row">
             <div class="form-group col">
               <input type="text" class="form-control" id="inputName" placeholder="Nombres" formControlName="firstNameControl">
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-        <div class="step step-1" *ngIf="stepIndex === 1">
+        <div class="step step-1" *ngIf="!submitted && stepIndex === 1">
           <div class="row">
             <label class="form-check-label float-left" for="exampleCheck1">¿Cuánto dispones como pago inicial?</label>
           </div>
@@ -82,6 +82,11 @@
                 <input type="number" class="form-control" min="0" max="300000" step="10000" value="30000" id="inputName" formControlName="bankCreditControl">
               </div>
             </div>
+          </div>
+        </div>
+        <div *ngIf="submitted">
+          <div>
+            Gracias por suscribirse.
           </div>
         </div>
       </div>
