@@ -20,6 +20,7 @@ import { FeaturesSectionComponent } from './arancibia/features-section/features-
 import { LocationSectionComponent } from './arancibia/location-section/location-section.component';
 import { LegalSectionComponent } from './arancibia/legal-section/legal-section.component';
 import { FooterComponent } from './arancibia/footer/footer.component';
+import { ContactSectionComponent } from './arancibia/contact-section/contact-section.component';
 
 const appRoutes: Routes = [
   { path: 'arancibia', component: ArancibiaComponent },
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     FeaturesSectionComponent,
     LocationSectionComponent,
     LegalSectionComponent,
-    FooterComponent
+    FooterComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,

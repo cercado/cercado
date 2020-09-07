@@ -1,6 +1,6 @@
 <div id="app-contact-form">
-  <div class="title">
-    ¡Déjanos tus datos!
+  <div *ngIf="title" class="title">
+    {{ title }}
   </div>
   <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)">
     <div class="align-items-start flex-column">

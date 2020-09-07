@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+section.process {
+    background-color: $color-secondary-dark;
+}
+
+:host ::ng-deep app-contact-form #app-contact-form {
+    background-color: unset;
+    padding: 0;
+
+    form input, form textarea {
+        background: white !important;
+        color: black !important;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { invalid } from '@angular/compiler/src/render3/view/util';
@@ -14,6 +14,7 @@ interface MailChimpResponse {
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
+  @Input() title : String;
   private mailChimpEndPoint = 'https://gmail.us17.list-manage.com/subscribe/' +
     'post-json?u=79d161c2c6d19193041762737&id=c8e6cca2e8';
   private stepIndex = 0;
