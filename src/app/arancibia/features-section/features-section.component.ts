@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DomSanitizer} from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { isDevMode } from '@angular/core';
 
 
 @Component({
@@ -39,9 +38,6 @@ export class FeaturesSectionComponent implements OnInit {
   }
 
   _toSafeURL(url: string) {
-    if(!isDevMode()) {
-      url = `cercado/${url}`;
-    }
     return this._sanitizer.bypassSecurityTrustStyle(`url(${url})`);
   }
 }
