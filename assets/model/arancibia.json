@@ -10,6 +10,33 @@
 			}
 		}
 	},
+	"title": "Tu casa propia en el corazón de Cercado de Lima",
+	"metaTags": [
+		{
+			"name": "og:url",
+			"content": "https://cercado.pe/arancibia"
+		},
+		{
+			"name": "og:type",
+			"content": "article"
+		},
+		{
+			"name": "og:title",
+			"content": "Tu vivienda en el corazón de Cercado"
+		},
+		{
+			"meta": "og:description",
+			"content": "How much does culture influence creative thinking?"
+		},
+		{
+			"meta": "og:image",
+			"content": "https://lh3.googleusercontent.com/pw/ACtC-3cVxI-0OHpS_O_GMBCF8Z8jWPc54i437yggytNl8FhjXFoXyOcmpSZRGTQ5XTvMjqWe-7U5A5YZdZ8ey0hKs9nnnng2vQtbcRBzaidhdlwE7VS3HxbxJqp__6jp_Z9VO9N49DyC3x4EPX1CEFlwJydhSA=w1024-h768-no?authuser=0"
+		},
+		{
+			"meta": "keyword",
+			"content": "casa,vivienda,propia,barrios altos,venta de casa,venta de inmueble,ocasion,departamento,cercado de lima,arancibia,almacen,barrio chino,estacion grau,grau,cachina,mercado central, mercado central lima,deposito,comprar casa,comprar vivienda,terreno"
+		}
+	],
 	"home": {
 		"carousel": {
 			"images": [
