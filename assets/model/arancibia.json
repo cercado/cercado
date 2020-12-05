@@ -25,27 +25,27 @@
 		"pages": [{
 				"title": "General",
 				"items": [{
-						"icon": "/assets/icons/interior-design/svg/029-rulers.svg",
+						"icon": "../assets/icons/interior-design/svg/029-rulers.svg",
 						"description": "73 m² de área de terreno."
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/039-architecture.svg",
+						"icon": "../assets/icons/interior-design/svg/039-architecture.svg",
 						"description": "Material noble"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/048-brick.svg",
+						"icon": "../assets/icons/interior-design/svg/048-brick.svg",
 						"description": "140 m² construido."
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/030-handrail.svg",
+						"icon": "../assets/icons/interior-design/svg/030-handrail.svg",
 						"description": "2 pisos"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/024-tile.svg",
+						"icon": "../assets/icons/interior-design/svg/024-tile.svg",
 						"description": "Fachada con acabados"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/046-blueprint.svg",
+						"icon": "../assets/icons/interior-design/svg/046-blueprint.svg",
 						"description": "Ubicación céntrica"
 					}
 				]
