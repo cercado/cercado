@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -41,6 +42,7 @@ import { PhotosSectionComponent } from './arancibia/photos-section/photos-sectio
   ],
   imports: [
     Angular2ImageGalleryModule,
+    NgxGoogleAnalyticsModule.forRoot('G-PZWM8Z83Y9'),
     BrowserModule,
     ClickOutsideModule,
     HttpClientModule,
