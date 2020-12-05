@@ -20,7 +20,7 @@
             <a class="nav-link" [routerLink]="['/arancibia']" fragment="legal">Información legal</a>
           </li>
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-            <a class="nav-link" [routerLink]="['/arancibia']" fragment="history">Historia</a>
+            <a class="nav-link" [routerLink]="['/arancibia']" fragment="photos">Fotos</a>
           </li>
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
             <a class="nav-link" [routerLink]="['/arancibia']" fragment="contact-us">Contáctanos</a>
@@ -34,6 +34,7 @@
   <app-home-slider [config]="config"></app-home-slider>
   <app-features-section [config]="config" id="features"></app-features-section>
   <app-location-section [config]="config" id="location"></app-location-section>
+  <app-photos-section [config]="config" id="photos"></app-photos-section>
   <app-legal-section [config]="config" id="legal"></app-legal-section>
   <app-contact-section [config]="config" id="contact"></app-contact-section>
 </main>

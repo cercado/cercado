@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ArancibiaComponent } from './arancibia/arancibia.component';
@@ -21,6 +23,7 @@ import { LocationSectionComponent } from './arancibia/location-section/location-
 import { LegalSectionComponent } from './arancibia/legal-section/legal-section.component';
 import { FooterComponent } from './arancibia/footer/footer.component';
 import { ContactSectionComponent } from './arancibia/contact-section/contact-section.component';
+import { PhotosSectionComponent } from './arancibia/photos-section/photos-section.component';
 
 const appRoutes: Routes = [
   { path: 'arancibia', component: ArancibiaComponent },
@@ -36,11 +39,13 @@ const appRoutes: Routes = [
     HomeSliderComponent,
     FeaturesSectionComponent,
     LocationSectionComponent,
+    PhotosSectionComponent,
     LegalSectionComponent,
     FooterComponent,
     ContactSectionComponent
   ],
   imports: [
+    Angular2ImageGalleryModule,
     BrowserModule,
     ClickOutsideModule,
     HttpClientModule,

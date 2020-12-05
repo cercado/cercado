@@ -1,0 +1,50 @@
+@import "../variables.scss";
+
+section.process {
+    background-color: $color-secondary;
+}
+
+iframe.doc {
+    width: 100%;
+    height: 80vh;
+    border: 0;
+}
+
+.description {
+    padding: 2em 0;
+    text-align: left;
+}
+
+
+.vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-fluid-max {
+    max-width: 1440px;
+}
+
+.card {
+    margin: 2em;
+}
+
+:host ::ng-deep .tab-pane.active {
+    animation: fade-in 4s ease-out;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+:host ::ng-deep .nav-tabs  {
+
+
+}
+
+:host ::ng-deep .nav-item {
+}
+
+:host ::ng-deep .nav-link.active {
+}
