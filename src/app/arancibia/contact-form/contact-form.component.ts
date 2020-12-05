@@ -14,7 +14,11 @@ interface MailChimpResponse {
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
+  private static ID: number = 0;
+
   @Input() title : String;
+
+  private id : number;
   private mailChimpEndPoint = 'https://gmail.us17.list-manage.com/subscribe/' +
     'post-json?u=79d161c2c6d19193041762737&id=c8e6cca2e8';
   private stepIndex = 0;
@@ -60,6 +64,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.id = ++ContactFormComponent.ID;
   }
 
   rollStep(delta: number) {
