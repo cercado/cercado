@@ -10,7 +10,7 @@ import config from '../../assets/model/arancibia.json';
 export class ArancibiaComponent implements OnInit {
   active = 1;
   config: any;
-  private scrolled: boolean = false;
+  scrolled: boolean = false;
 
   constructor() {
   };

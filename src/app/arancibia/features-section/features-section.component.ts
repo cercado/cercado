@@ -13,8 +13,8 @@ export class FeaturesSectionComponent implements OnInit {
 
   @Input() config;
 
-  private _itemsMatrixList;
-  private _active;
+  _itemsMatrixList;
+  _active;
 
   constructor(private _sanitizer: DomSanitizer) {
   }

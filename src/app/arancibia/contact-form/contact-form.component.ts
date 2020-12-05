@@ -18,10 +18,10 @@ export class ContactFormComponent implements OnInit {
 
   @Input() title : String;
 
-  private id : number;
+  id : number;
   private mailChimpEndPoint = 'https://gmail.us17.list-manage.com/subscribe/' +
     'post-json?u=79d161c2c6d19193041762737&id=c8e6cca2e8';
-  private stepIndex = 0;
+  stepIndex = 0;
   submitted = false;
   displayValidation = false;
   error = null;

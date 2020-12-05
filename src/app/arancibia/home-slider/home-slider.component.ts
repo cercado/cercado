@@ -17,7 +17,7 @@ export class HomeSliderComponent implements OnInit {
 
   private _images: Array<string>;
   private _currentImage: number;
-  private scrolled: boolean = false;
+  scrolled: boolean = false;
 
   constructor(private _sanitizer: DomSanitizer, private _elem: ElementRef) {
   }
