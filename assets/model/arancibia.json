@@ -53,27 +53,27 @@
 			{
 				"title": "Habitaciones",
 				"items": [{
-						"icon": "/assets/icons/interior-design/svg/002-living-room.svg",
+						"icon": "./assets/icons/interior-design/svg/002-living-room.svg",
 						"description": "1 sala amplia"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/003-double-bed.svg",
+						"icon": "./assets/icons/interior-design/svg/003-double-bed.svg",
 						"description": "2 dormitorios"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/005-bathroom.svg",
+						"icon": "./assets/icons/interior-design/svg/005-bathroom.svg",
 						"description": "2 baños (jacuzzi)"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/010-kitchen.svg",
+						"icon": "./assets/icons/interior-design/svg/010-kitchen.svg",
 						"description": "1 Cocina"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/001-cactus.svg",
+						"icon": "./assets/icons/interior-design/svg/001-cactus.svg",
 						"description": "1 Balcón"
 					},
 					{
-						"icon": "/assets/icons/interior-design/svg/030-handrail.svg",
+						"icon": "./assets/icons/interior-design/svg/030-handrail.svg",
 						"description": "Escalera a azotea"
 					}
 				]
@@ -83,7 +83,7 @@
 	"location": {
 		"path": [{
 				"title": "Estación Grau",
-				"icon": "/assets/icons/navigation/png/001-parking.png",
+				"icon": "./assets/icons/navigation/png/001-parking.png",
 				"position": {
 					"latitude": -12.054459,
 					"longitude": -77.0136602
@@ -115,7 +115,7 @@
 			},
 			{
 				"title": "Mi nueva casa",
-				"icon": "/assets/icons/navigation/png/024-placeholder.png",
+				"icon": "./assets/icons/navigation/png/024-placeholder.png",
 				"position": {
 					"latitude": -12.0489337,
 					"longitude": -77.0157566
@@ -126,7 +126,7 @@
 				"title": "Congreso de la República",
 				"description": "El Congreso de la República del Perú​ es el órgano que ejerce el poder legislativo en la República del Perú, ocupando una posición principal dentro del Estado Peruano. Es, desde 1995, un congreso unicameral por cuanto está conformado por una sola cámara legislativa inicialmente de 120 congresistas y partir del 28 de julio de 2011 por 130 congresistas.",
 				"image": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2016/08/01/000368373W.jpg",
-				"icon": "/assets/icons/navigation/png/029-find-1.png",
+				"icon": "./assets/icons/navigation/png/029-find-1.png",
 				"position": {
 					"latitude": -12.0480046,
 					"longitude": -77.0275441
@@ -136,7 +136,7 @@
 				"title": "Quinta Heeren",
 				"description": "La Quinta Heeren es uno de los primeros condominios de residencias particulares construidos en Lima alrededor de la década de 1880. La arquitectura historicista, con mucha influencia victoriana y ecléctica. La historia de la Quinta es un referente patrimonial de la ciudad de Lima.",
 				"image": "https://puntoseguido.upc.edu.pe/wp-content/uploads/2018/07/01072018-36555232_192875428224116_797196095355617280_n.jpg",
-				"icon": "/assets/icons/navigation/png/029-find-1.png",
+				"icon": "./assets/icons/navigation/png/029-find-1.png",
 				"position": {
 					"latitude": -12.04925,
 					"longitude": -77.0204917
@@ -146,7 +146,7 @@
 				"title": "Colegio Parroquial Nuetra Señora de las Mercedes",
 				"description": "Institución Educativa que educa en los tres niveles de educación básica regular. Propone una educación en valores como participación, justicia, verdad, fraternidad, solidaridad y autonomíá. ",
 				"image": "http://www.mercedariasbarriosaltos.edu.pe/sites/default/files/styles/estilo_historia/public/foto4_0.jpg?itok=PmWtVRuH",
-				"icon": "/assets/icons/navigation/png/030-search.png",
+				"icon": "./assets/icons/navigation/png/030-search.png",
 				"position": {
 					"latitude": -12.0482949,
 					"longitude": -77.0172344
@@ -156,7 +156,7 @@
 				"title": "Colegio  Nuetra Señora de las Mercedes",
 				"description": "Institución Educativa pública de nivel secundario ubicado en el centro histórico, distrito y provincia de Lima, donde forma estudiantes desde hace mas de medio siglo.",
 				"image": "https://2.bp.blogspot.com/-QR8N1I5jfwg/WiCnJT6cBdI/AAAAAAABDa0/VXnSc7OBPL42GWy_UQoHfBvU9wGctTy7wCLcBGAs/s1600/ie-25-nuestra-senora-de-la-inmaculada-concepcion.jpg",
-				"icon": "/assets/icons/navigation/png/030-search.png",
+				"icon": "./assets/icons/navigation/png/030-search.png",
 				"position": {
 					"latitude": -12.0513698,
 					"longitude": -77.0179218
