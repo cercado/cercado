@@ -25,11 +25,6 @@ import { FooterComponent } from './arancibia/footer/footer.component';
 import { ContactSectionComponent } from './arancibia/contact-section/contact-section.component';
 import { PhotosSectionComponent } from './arancibia/photos-section/photos-section.component';
 
-const appRoutes: Routes = [
-  { path: 'arancibia', component: ArancibiaComponent },
-
-]
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +47,9 @@ const appRoutes: Routes = [
     HttpClientJsonpModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      // The only project is Arancibia for now.
+      // { path: '', component: HomeComponent },
+      { path: '', component: ArancibiaComponent },
       { path: 'arancibia', component: ArancibiaComponent },
     ], {
       scrollPositionRestoration: 'enabled',
