@@ -161,6 +161,26 @@
 					"latitude": -12.0513698,
 					"longitude": -77.0179218
 				}
+			},
+			{
+				"title": "Colegio particular",
+				"description": "Colegio Católica Las Mercedes",
+				"image": "https://scontent.flim10-1.fna.fbcdn.net/v/t1.0-9/484933_371832409517847_1215865155_n.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeG4NStg9XtqwgTyQZ79BVeU0yunmmS8iyjTK6eaZLyLKLLErSUz9Wwv_AumFuHeSfw&_nc_ohc=RNqCEQGsex0AX8DHCds&_nc_ht=scontent.flim10-1.fna&oh=8c88c68c36b807223a078c694458d46b&oe=5FFF24F5",
+				"icon": "./assets/icons/navigation/png/030-search.png",
+				"position": {
+					"latitude": -12.0491118,
+					"longitude": -77.0144321
+				}
+			},
+			{
+				"title": "Supermercado",
+				"description": "Supermercado UNO",
+				"image": "https://www.peru-retail.com/wp-content/uploads/hiperbodega-uno-Ica.jpeg",
+				"icon": "./assets/icons/navigation/png/017-location-pin.png",
+				"position": {
+					"latitude": -12.0558732,
+					"longitude": -77.0185976
+				}
 			}
 		]
 	},
